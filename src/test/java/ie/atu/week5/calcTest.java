@@ -22,6 +22,9 @@ class calcTest {
     @Test
     void test_subtract(){ assertEquals(0,new_calc.subtract(0,0));}
 
+    @Test
+    void test_mult(){ assertEquals(10000,new_calc.mult(10000,1));}
+
     @AfterEach
     void tearDown() {
 
