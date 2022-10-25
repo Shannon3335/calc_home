@@ -11,7 +11,6 @@ class calcTest {
     @BeforeEach
     void setUp() {
          new_calc = new calc();
-
     }
 
     @Test
@@ -19,6 +18,9 @@ class calcTest {
     {
         assertEquals(1,new_calc.add(0,1));
     }
+
+    @Test
+    void test_subtract(){ assertEquals(0,new_calc.subtract(0,0));}
 
     @AfterEach
     void tearDown() {
