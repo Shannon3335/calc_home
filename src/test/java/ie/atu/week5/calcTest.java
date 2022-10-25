@@ -25,6 +25,11 @@ class calcTest {
     @Test
     void test_mult(){ assertEquals(10000,new_calc.mult(10000,1));}
 
+    @Test
+    void test_contructor(){
+        Exception e_message = assertThrows(IllegalArgumentException.class,() -> {new calc(-2);});
+        assertEquals( "number sould be greater than 0",e_message.getMessage());
+    }
     @AfterEach
     void tearDown() {
 
