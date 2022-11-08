@@ -11,6 +11,7 @@ class calcTest {
     @BeforeEach
     void setUp() {
          new_calc = new calc();
+
     }
 
     @Test
